@@ -12,3 +12,8 @@ def bubbleSort (myList):
     
 theList = ['1', '5', '3', '2', '4', '6']
 print (bubbleSort(theList))
+
+theList = ['1', '5', '3', '2', '4', '6']
+print (bubbleSort(theList))
+Bubble(myList)
+print("Sorted List:", Mylist)
