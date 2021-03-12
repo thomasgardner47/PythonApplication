@@ -24,3 +24,5 @@ plt.scatter(compressed[:,0], compressed[:,1], c=classifiedData)
 plt.title("PCA projection - classified")
 plt.savefig("iris_pca_classified.png", bbox_inches="tight")
 plt.show()
+
+
