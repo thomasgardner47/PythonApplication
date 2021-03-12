@@ -18,3 +18,12 @@ def gameofLife(grid, niter):
                 #Transition rules.
                 if grid[i,j] == 1 and sum(neighbours) < 2:
                     nextGrid[i,j] = 0
+                if grid [i,j] == 1 and sum(neighbours) in [2,3]:
+                    nextGrid[i,j] = 1
+                if grid[i,j] == 1 and sum(neighbours) > 3:
+                    nextGrid[i,j] = 0
+                if grid[i,j] == 0 and sum(neighbours) == 3:
+                    nextgrid[i,j] = 1
+
+            # Append the grid to the List, and update the nextGrid
+            # to be 
