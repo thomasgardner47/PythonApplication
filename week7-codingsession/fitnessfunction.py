@@ -14,7 +14,7 @@ class BitFlipMutation:
         index, and flip it's bit.
         """
 
-        idx = np.random.randint(x.shape(0))
+        idx = np.random.randint(x.shape[0])
         xp = x.copy()
         xp[idx] = 1-x[idx]  # 1-1 = 0,0-1 = -1
 
@@ -22,7 +22,7 @@ class BitFlipMutation:
 
 
 mutObj = BitFlipMutation()
-x = np.array([1, 1, 1, 1, 1, 1, 1, 1])
+x = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1])
 xp = mutObj.mutate(x)
 print(x)
 print(xp)
@@ -39,6 +39,11 @@ def evolve(x, y, func, mutation, compare, archive):
         archive = []
 
         for gen in range(ngens):
-            x, y, archive = evolve(x, y, func. mutation, compare, archive)
+            x, y, archive = evolve(x, y, func, mutation, compare, archive)
 
             return e, y, archive
+
+
+print(x, y)
+plt.figure()
+plt.plot(archive)
