@@ -9,11 +9,3 @@ plt.xlabel("$x$")
 plt.ylabel("$y$")
 plt.savefig("sin.png", bbox_inches="tight")
 plt.show()  # this is the last command
-
-
-uniform = np.random.rand(100)
-normal = np.random.randn(100)
-
-plt.figure()
-plt.hist(uniform)
-plt.hist(normal)
