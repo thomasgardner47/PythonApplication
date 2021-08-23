@@ -1,5 +1,5 @@
-# PythonApplication
-This repository is to show my knowledge of Python 
+# Python Machine learning basics
+This repository is to show my knowledge of basic Python functions and algorithms used in machine learning
 
 The following code has been implemented from Visual Studio code and commited/pushed via Github Desktop. 
 
